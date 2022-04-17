@@ -21,7 +21,8 @@ header{
   background-color: #217e9e;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px; 
+  margin-bottom: 50px;
 }
 
 .logo{
@@ -91,26 +92,6 @@ position: relative;
 cursor: pointer;
 overflow: hidden;
 }
-
-/*.gallery::before {
-  content: "Bao Textil";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color:#217e9e;
-  transform: scale(0);
-  transition: transform .4s;
-  color: #fbfff2;
-  align-items: center;
-  justify-content: center;
-
-}
-DEJO COMO COMENTADO ALGUNOS ARREGLOS
-.gallery:hover{
-  transform: scale(1) rotate(360deg);
-}*/
 
 .gallery__picture1{
 grid-area: img1;
@@ -225,6 +206,7 @@ ul {
 }
 
 /*nosotros*/
+
 .titule {
   text-align: center;
   background: #fbfff2;
@@ -232,39 +214,177 @@ ul {
   display: block;
 }
 
-@media screen and (max-width: 790px) {
-  .titule{
-   height: 5%;
-   background-color: azure;
-   font-size: 20px;
-  }
-}
-
 .titule__content {
   background: #bae2ec;
   text-align: center;
-  align-content: center;
+  display: flex;
+  align-items: stretch;
 }
 
 @media screen and (max-width: 790px) {
 .titule__content{
   font-size: 10px;
 }
+.titule{
+   height: 5%;
+   background-color: azure;
+   font-size: 20px;
+  }
 }
 
-section h2 {
-  background: #bae2ec;
+.flex__container__us{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.titule__image1{
+  height: 500px;
+  display: flex;
+  margin: 25px;
+  align-items: center;
+  border-radius: 90px;
+}
+
+.titule__content1 {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
   text-align: justify;
-  padding: 5%;
+  align-items: center;
+  background-color: #bae2ec;
+  border-radius: 100px;
+  padding: 30px;
+  font-size:larger;
+  line-height: 35px;
+
 
 }
 
-section h3 {
-  background: #bae2ec;
+.titule__content2 {
+  width: 450px;
   text-align: justify;
-  padding: 5%;
+  padding: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #bae2ec;
+  border-radius: 100px;
+  font-size: larger;
+  line-height: 40px;
+  margin: 30px;
 }
 
+.titule__image2 {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  align-items: center;
+  border-radius: 90px;
+}
+
+/*page service*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+h1 {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/*contact page*/
 .contact__content{
 display: flex;
 
