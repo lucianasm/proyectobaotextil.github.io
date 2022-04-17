@@ -93,26 +93,6 @@ cursor: pointer;
 overflow: hidden;
 }
 
-/*.gallery::before {
-  content: "Bao Textil";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color:#217e9e;
-  transform: scale(0);
-  transition: transform .4s;
-  color: #fbfff2;
-  align-items: center;
-  justify-content: center;
-
-}
-DEJO COMO COMENTADO ALGUNOS ARREGLOS
-.gallery:hover{
-  transform: scale(1) rotate(360deg);
-}*/
-
 .gallery__picture1{
 grid-area: img1;
 }
@@ -396,7 +376,6 @@ span:nth-child(16) {
 span:nth-child(17) {
   animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
-
 
 @keyframes fade-in {
   100% {
