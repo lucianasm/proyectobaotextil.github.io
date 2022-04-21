@@ -9,139 +9,27 @@
   list-style: none;
 }
 
-body{
+body {
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-header{
+.header {
   display: flex;
   min-height: 70px;
   background-color: #217e9e;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: black;
-}
-
-nav a{
-font-weight: 600px;
-padding-right: 10px;
-}
-
-nav a:hover{
-color: black;
-}
-
-@media (max-width: 700px){
-  header{
-    flex-direction: column;
-  }
-
-  nav{
-    padding: 10px;
-    text-align: center;
-  }
-}
-
-/*inicio de mi index*/
-
-.gallery{
-padding-bottom: 3em;
-padding-top: 1em;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-auto-rows: 160px;
-grid-template-areas: 
-"img1 img4"
-"img1 img4"
-"img2 img3"
-"img2 img3"
-;
-gap: 10px;
-}
-
-@media screen and (max-width: 720px){
- .gallery{
- grid-template-columns: repeat(1, 1fr);
- grid-template-areas: 
- "img1"
- "img1"
-"img4"
-"img4"
-"img2"
-"img2"
-"img3"
-"img3";
- gap: 5px;} 
-}
-
-.gallery__picture{
-width: 100%;
-height: 100%;
-object-fit: cover;
-position: relative;
-cursor: pointer;
-overflow: hidden;
-}
-
-/*.gallery::before {
-  content: "Bao Textil";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color:#217e9e;
-  transform: scale(0);
-  transition: transform .4s;
-  color: #fbfff2;
-  align-items: center;
-  justify-content: center;
-
-}
-DEJO COMO COMENTADO ALGUNOS ARREGLOS
-.gallery:hover{
-  transform: scale(1) rotate(360deg);
-}*/
-
-.gallery__picture1{
-grid-area: img1;
-}
-
-.gallery__picture2{
-grid-area: img2;
-}
-
-.gallery__picture3{
-grid-area: img3;
-}
-
-.gallery__picture4{
-grid-area: img4;
-}
-
-/*fin de mi index*/
-
-.flex__container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-between;
-  align-items: stretch; 
-  align-items: center;
-}  
-
-.content__ul{
-display: contents;
 }
 
 li a {
@@ -163,12 +51,8 @@ li {
   display: inline-block;
 }
 
-nav a {
-  background: #217e9e;
+.h1, h1.titule{
   text-align: center;
-  text-decoration: none;
-  color: #fbfff2;
-  display: inline-block;
 }
 
 ul {
@@ -189,12 +73,6 @@ ul {
   margin-left: 5px;
   background: azure;
   overflow: hidden;
-}
-
-@media screen and (max-width: 790px){
-  .card{
-    width: 300px;
-  }
 }
 
 .card__title {
@@ -225,91 +103,162 @@ ul {
 }
 
 /*nosotros*/
+
 .titule {
   text-align: center;
-  background: #fbfff2;
+  background: #217e9e;
   align-items: center;
   display: block;
-}
-
-@media screen and (max-width: 790px) {
-  .titule{
-   height: 5%;
-   background-color: azure;
-   font-size: 20px;
-  }
 }
 
 .titule__content {
   background: #bae2ec;
   text-align: center;
-  align-content: center;
+  display: flex;
+  align-items: stretch;
 }
 
-@media screen and (max-width: 790px) {
-.titule__content{
-  font-size: 10px;
-}
+
+.flex__container__us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
-section h2 {
-  background: #bae2ec;
+.titule__image1 {
+  height: 500px;
+  display: flex;
+  margin: 25px;
+  align-items: center;
+  border-radius: 90px;
+}
+
+.titule__content1 {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
   text-align: justify;
-  padding: 5%;
-
+  align-items: center;
+  background-color: #bae2ec;
+  border-radius: 100px;
+  padding: 30px;
+  font-size: larger;
+  line-height: 35px;
 }
 
-section h3 {
-  background: #bae2ec;
+.titule__content2 {
+  width: 450px;
   text-align: justify;
-  padding: 5%;
+  padding: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #bae2ec;
+  border-radius: 100px;
+  font-size: larger;
+  line-height: 40px;
+  margin: 30px;
 }
 
-.contact__content{
-display: flex;
+.titule__image2 {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  align-items: center;
+  border-radius: 90px;
+}
+
+
+.contact__content {
+  display: flex;
 
 }
 
-.image__contact{
+.image__contact {
   align-items: center;
   width: 60%;
   grid-area: imgcenter;
 }
 
-iframe{
+iframe {
   display: flex;
   width: 40%;
   grid-area: iframe;
 }
 
+
+/*footer*/
+title {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "img1"
+      "img1"
+      "img4"
+      "img4"
+      "img2"
+      "img2"
+      "img3"
+      "img3";
+    gap: 5px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
-  .contact__content{
+  .contact__content {
     display: inline-block;
   }
 
-  .image__contact{
+  .image__contact {
     width: 100%;
   }
 
-  iframe{
+  iframe {
     width: 100%;
   }
-  
-}
-/*footer*/
-title{
-  display: none;
+
 }
 
-script{
-  display: none;
+@media screen and (max-width: 790px) {
+  .titule__content {
+    font-size: 10px;
+  }
+
+  .titule {
+    height: 5%;
+    background-color: azure;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 300px;
+  }
 }
 
-footer{
-  width: 100%;
- margin-top: auto;
- position:fixed;
- left:0px;
- bottom:0px;
- margin-top: 30px;
-}

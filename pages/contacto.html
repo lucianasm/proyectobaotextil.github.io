@@ -4,50 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="../assets/img/letra-b.png" />
     <title>CONTACTO</title>
   </head>
 
   <body>
     <header>
-      <h2 class="nombre__empresa">BAO TEXTIL</h2>
-      <div>
-        <nav>
-          <a href="../index.html" class="nav-link">INICIO</a>
-          <a href="empresa.html" class="nav-link">NOSOTROS</a>
-          <a href="productos.html" class="nav-link">PRODUCTOS</a>
-          <a href="servicios.html" class="nav-link">SERVICIOS</a>
-          <a href="contacto.html" class="nav-link">CONTACTO</a>
-        </nav>
-      </div>
-    </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">BAO TEXTIL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              <a class="nav-link" href="empresa.html">EMPRESA</a>
+              <a class="nav-link" href="productos.html">PRODUCTOS</a>
+              <a class="nav-link" href="servicios.html">SERVICIOS</a>
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+  
+  <h1 class="text-center">PAGINA DE CONTACTO</h1>
+  <div class="container">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email para contacto</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            Solo lo utilizaremos para contactarnos por tu consulta.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Comentario/consulta</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
 
-   
-    <h1 class="titule">PAGINA DE CONTACTO</h1>
-
-<div class="contact__content">
-<img src="../assets/img/maquinacenter.jpg" class="image__contact" width="100%">
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.772906749281!2d-58.70890778476954!3d-34.635178680451325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf2bd785bcf1%3A0x594b7a245ce3a4d1!2sDanina%20Store!5e0!3m2!1ses!2sar!4v1649718987402!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
-
-<!--inicio footer-->
-<footer class="footer">
-  <ul class="footer__content">
-    <li>
-      <a href="../index.html"><img src="../assets/img/home-alt-2-regular-24.png"></a>
-    </li>
-    <li>
-      <a href="../pages/contacto.html"><img src="../assets/img/gmail-logo-24.png"></a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/baotextil/" target="_blank"
-        ><img src="../assets/img/instagram-logo-24.png"></a
-      >
-    </li>
-  </ul>
-</footer>
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="https://www.instagram.com/baotextil/" target="_blank">REDES</a>
+          <a class="nav-link" href="https://goo.gl/maps/Jyfex2CnoDCB1VXH7" target="_blank">ENCONTRANOS</a>
+        </div>
+       </div>
+      </nav>
+    </footer>
+ <script src="../assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

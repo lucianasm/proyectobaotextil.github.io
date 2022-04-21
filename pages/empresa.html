@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="shortcut icon" href="../assets/img/letra-b.png" />
     <title>EMPRESA</title>
@@ -11,16 +12,24 @@
 
   <body>
     <header>
-      <h2 class="nombre__empresa">BAO TEXTIL</h2>
-      <div>
-        <nav>
-          <a href="../index.html" class="nav-link">INICIO</a>
-          <a href="empresa.html" class="nav-link">NOSOTROS</a>
-          <a href="productos.html" class="nav-link">PRODUCTOS</a>
-          <a href="servicios.html" class="nav-link">SERVICIOS</a>
-          <a href="contacto.html" class="nav-link">CONTACTO</a>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">BAO TEXTIL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              <a class="nav-link" href="empresa.html">EMPRESA</a>
+              <a class="nav-link" href="productos.html">PRODUCTOS</a>
+              <a class="nav-link" href="servicios.html">SERVICIOS</a>
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
 
@@ -58,5 +67,6 @@
         </li>
       </ul>
     </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
