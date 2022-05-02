@@ -1,6 +1,18 @@
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none; 
-}
+footer {
+  background-color: #217e9e; }
+  footer nav {
+    background-color: #217e9e; }
+    footer nav div {
+      background-color: #217e9e; }
+      footer nav div a img {
+        width: 40px;
+        align-content: center; }
 
+header {
+  background-color: #217e9e; }
+  header nav {
+    background-color: #217e9e; }
+    header nav div {
+      background-color: #217e9e; }
+      header nav div a img {
+        width: 100px; }

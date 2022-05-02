@@ -1,18 +1,16 @@
-@import "_footer.scss";
-
 $color-principal: #217e9e;
 $letra-principal: rgb(255, 255, 255);
 
-header{
+footer{
     background-color: $color-principal;
     nav{
         background-color: $color-principal;
         div{
             background-color: $color-principal;
             a{
-               
                 img{
-                    width: 100px;
+                    width: 40px;
+                    align-content: center;
                 }
             }
         }
