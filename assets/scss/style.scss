@@ -1,18 +1,61 @@
-@import "_footer.scss";
-
-$color-principal: #217e9e;
+$color-principal: #a6d7d3;
 $letra-principal: rgb(255, 255, 255);
 
-header{
-    background-color: $color-principal;
-    nav{
-        background-color: $color-principal;
-        div{
+@import "../scss/prodpage";
+@import "../scss/mixins";
+@import "../scss/maps";
+
+header {
+nav { 
+    background-color: $color-principal
+}
+
+        div {
             background-color: $color-principal;
-            a{
-               
-                img{
+
+            a {
+                img {
                     width: 100px;
+                }
+            }
+        }
+    
+    }
+
+body {
+    div {
+        padding-bottom: 10px;
+
+    }
+
+    .img-photo {
+        display: flex;
+        justify-content: space-around;
+
+
+        .link-ref-photo {
+            text-decoration: none;
+            color: black;
+
+        }
+
+    }
+}
+
+
+footer {
+    background-color: $color-principal;
+
+    nav {
+        background-color: $color-principal;
+
+        div {
+            background-color: $color-principal;
+
+            a {
+                img {
+                    width: 40px;
+                    align-content: center;
                 }
             }
         }

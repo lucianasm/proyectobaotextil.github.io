@@ -1,18 +1,48 @@
+.image-view {
+  border-radius: 50%;
+  width: 40vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 5%;
+  flex-direction: row; }
+  .image-view:hover {
+    filter: opacity(60%); }
+
+.letraChica {
+  font-size: 1rem;
+  font-weight: 100; }
+
+.letraMediana {
+  font-size: 4rem;
+  font-weight: 500; }
+
+.botonInicio {
+  color: white; }
+
+header nav {
+  background-color: #a6d7d3; }
+
+header div {
+  background-color: #a6d7d3; }
+  header div a img {
+    width: 100px; }
+
+body div {
+  padding-bottom: 10px; }
+
+body .img-photo {
+  display: flex;
+  justify-content: space-around; }
+  body .img-photo .link-ref-photo {
+    text-decoration: none;
+    color: black; }
+
 footer {
-  background-color: #217e9e; }
+  background-color: #a6d7d3; }
   footer nav {
-    background-color: #217e9e; }
+    background-color: #a6d7d3; }
     footer nav div {
-      background-color: #217e9e; }
+      background-color: #a6d7d3; }
       footer nav div a img {
         width: 40px;
         align-content: center; }
-
-header {
-  background-color: #217e9e; }
-  header nav {
-    background-color: #217e9e; }
-    header nav div {
-      background-color: #217e9e; }
-      header nav div a img {
-        width: 100px; }
