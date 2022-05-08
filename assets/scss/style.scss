@@ -8,6 +8,7 @@ $letra-principal: rgb(255, 255, 255);
 header {
 nav { 
     background-color: $color-principal
+    
 }
 
         div {
@@ -40,6 +41,32 @@ body {
         }
 
     }
+}
+
+.image-inicio{
+    border-radius: 100%;
+    width: 20rem;
+    margin: 15px;
+    
+    &:hover {
+        filter: opacity(60%);
+
+    }
+}
+
+.banner{
+    background-color: black;
+    display: flex;
+    height: 30px;
+    align-content: center;
+    
+
+.text-banner{
+   display: flex;
+   text-align: center;
+    color: white;
+
+}
 }
 
 

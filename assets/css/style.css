@@ -37,6 +37,23 @@ body .img-photo {
     text-decoration: none;
     color: black; }
 
+.image-inicio {
+  border-radius: 100%;
+  width: 20rem;
+  margin: 15px; }
+  .image-inicio:hover {
+    filter: opacity(60%); }
+
+.banner {
+  background-color: black;
+  display: flex;
+  height: 30px;
+  align-content: center; }
+  .banner .text-banner {
+    display: flex;
+    text-align: center;
+    color: white; }
+
 footer {
   background-color: #a6d7d3; }
   footer nav {
