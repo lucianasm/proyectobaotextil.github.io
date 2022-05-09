@@ -1,12 +1,5 @@
-@mixin fontsize ($size, $weigth) {
-    font-size: $size;
-    font-weight: $weigth;
+@mixin margin-card ($margin){
+$margin: 10px;
 }
-
-.letraChica{
-    @include fontsize(1rem, 100)
-}
-
-.letraMediana{
- @include fontsize(4rem, 500)
-}
+.product-card{
+   @include margin-card(10px)}

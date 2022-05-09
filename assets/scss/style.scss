@@ -1,27 +1,25 @@
 $color-principal: #a6d7d3;
 $letra-principal: rgb(255, 255, 255);
 
-@import "../scss/prodpage";
 @import "../scss/mixins";
 @import "../scss/maps";
 
 header {
-nav { 
-    background-color: $color-principal
-    
-}
+    nav {
+        background-color: $color-principal
+    }
 
-        div {
-            background-color: $color-principal;
+    div {
+        background-color: $color-principal;
 
-            a {
-                img {
-                    width: 100px;
-                }
+        a {
+            img {
+                width: 100px;
             }
         }
-    
     }
+
+}
 
 body {
     div {
@@ -43,30 +41,40 @@ body {
     }
 }
 
-.image-inicio{
-    border-radius: 100%;
-    width: 20rem;
-    margin: 15px;
-    
-    &:hover {
-        filter: opacity(60%);
+.product-card{
+    margin: 10px;
+}
 
+.conteiner {
+    display: flex;
+
+    .image-inicio {
+        border-radius: 100%;
+        width: 20rem;
+        margin: 15px;
+
+        &:hover {
+            filter: opacity(60%);
+
+        }
     }
 }
 
-.banner{
-    background-color: black;
+
+.banner {
+    background-color: #a6d7d3;
     display: flex;
     height: 30px;
     align-content: center;
-    
+    justify-content: space-around;
 
-.text-banner{
-   display: flex;
-   text-align: center;
-    color: white;
 
-}
+    .text-banner {
+        display: flex;
+        text-align: center;
+        color: white;
+        
+    }
 }
 
 
