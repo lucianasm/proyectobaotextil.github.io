@@ -1,8 +1,9 @@
 $color-principal: #a6d7d3;
 $letra-principal: rgb(255, 255, 255);
+$margin: 10px;
 
-@import "../scss/mixins";
-@import "../scss/maps";
+@import "../scss/_mixins.scss";
+@import "../scss/_maps.scss";
 
 header {
     nav {
@@ -41,10 +42,6 @@ body {
     }
 }
 
-.product-card{
-    margin: 10px;
-}
-
 .conteiner {
     display: flex;
 
@@ -60,6 +57,9 @@ body {
     }
 }
 
+.product-card{
+    margin: 10px;
+}
 
 .banner {
     background-color: #a6d7d3;

@@ -19,9 +19,6 @@ body .img-photo {
     text-decoration: none;
     color: black; }
 
-.product-card {
-  margin: 10px; }
-
 .conteiner {
   display: flex; }
   .conteiner .image-inicio {
@@ -30,6 +27,9 @@ body .img-photo {
     margin: 15px; }
     .conteiner .image-inicio:hover {
       filter: opacity(60%); }
+
+.product-card {
+  margin: 10px; }
 
 .banner {
   background-color: #a6d7d3;
