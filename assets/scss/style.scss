@@ -40,7 +40,7 @@ body {
 }
 
 .conteiner {
-    display: flex;
+    @include display;
 
     .image-inicio {
         border-radius: 100%;
@@ -59,11 +59,10 @@ body {
 }    
 
 .banner {
-    background-color: $color-principal;
-    display: flex;
+    @include display;
+    background-color: $color-principal; 
     height: 30px;
-    align-content: center;
-    justify-content: space-around;
+   
 
 
     .text-banner {
@@ -86,8 +85,8 @@ footer {
 
             a {
                 img {
+                    @include display;
                     width: 40px;
-                    align-content: center;
                 }
             }
         }

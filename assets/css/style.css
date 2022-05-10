@@ -17,7 +17,9 @@ body .img-photo {
     color: black; }
 
 .conteiner {
-  display: flex; }
+  display: flex;
+  align-content: center;
+  justify-content: space-around; }
   .conteiner .image-inicio {
     border-radius: 100%;
     width: 20rem;
@@ -29,11 +31,11 @@ body .img-photo {
   margin: 10px; }
 
 .banner {
-  background-color: #a6d7d3;
   display: flex;
-  height: 30px;
   align-content: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: #a6d7d3;
+  height: 30px; }
   .banner .text-banner {
     display: flex;
     text-align: center;
@@ -46,5 +48,7 @@ footer {
     footer nav div {
       background-color: #a6d7d3; }
       footer nav div a img {
-        width: 40px;
-        align-content: center; }
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        width: 40px; }
