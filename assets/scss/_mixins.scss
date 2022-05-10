@@ -1,5 +1,0 @@
-@mixin margin-card ($margin){
-$margin: 10px;
-}
-.product-card{
- @include margin-card(10px)}

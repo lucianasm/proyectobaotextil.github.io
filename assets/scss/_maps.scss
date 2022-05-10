@@ -1,8 +1,0 @@
-$redes: (
-    inicio: rgb(255, 255, 255),
-   
-);
-
-.botonInicio {
- color: map-get($map: $redes, $key: inicio);
-}

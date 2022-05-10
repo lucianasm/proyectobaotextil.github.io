@@ -1,7 +1,4 @@
-$color-principal: #a6d7d3;
-$letra-principal: rgb(255, 255, 255);
-$margin: 10px;
-
+@import "../scss/variables";
 @import "../scss/_mixins.scss";
 @import "../scss/_maps.scss";
 
@@ -48,7 +45,7 @@ body {
     .image-inicio {
         border-radius: 100%;
         width: 20rem;
-        margin: 15px;
+        margin: $margin;
 
         &:hover {
             filter: opacity(60%);
@@ -58,11 +55,11 @@ body {
 }
 
 .product-card{
-    margin: 10px;
-}
+    margin: $margin;
+}    
 
 .banner {
-    background-color: #a6d7d3;
+    background-color: $color-principal;
     display: flex;
     height: 30px;
     align-content: center;
@@ -72,7 +69,7 @@ body {
     .text-banner {
         display: flex;
         text-align: center;
-        color: white;
+        color: $letra-principal;
         
     }
 }

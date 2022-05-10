@@ -1,6 +1,3 @@
-.botonInicio {
-  color: white; }
-
 header nav {
   background-color: #a6d7d3; }
 
@@ -24,7 +21,7 @@ body .img-photo {
   .conteiner .image-inicio {
     border-radius: 100%;
     width: 20rem;
-    margin: 15px; }
+    margin: 10px; }
     .conteiner .image-inicio:hover {
       filter: opacity(60%); }
 
