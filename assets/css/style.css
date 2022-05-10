@@ -6,6 +6,13 @@ header div {
   header div a img {
     width: 100px; }
 
+header .container-navbar {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: space-around; }
+
 body div {
   padding-bottom: 10px; }
 

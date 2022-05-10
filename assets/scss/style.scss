@@ -16,7 +16,11 @@ header {
             }
         }
     }
-
+    .container-navbar{
+        @include display;
+        flex-direction: row;
+        align-content:space-around;
+    }
 }
 
 body {
