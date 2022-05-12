@@ -19,7 +19,7 @@ header {
     .container-navbar{
         @include display;
         flex-direction: row;
-        align-content:space-around;
+        
     }
 }
 
@@ -41,6 +41,10 @@ body {
         }
 
     }
+}
+
+h1{
+font-size: x-large;
 }
 
 .conteiner {

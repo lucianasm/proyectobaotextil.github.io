@@ -10,8 +10,7 @@ header .container-navbar {
   display: flex;
   align-content: center;
   justify-content: space-around;
-  flex-direction: row;
-  align-content: space-around; }
+  flex-direction: row; }
 
 body div {
   padding-bottom: 10px; }
@@ -22,6 +21,9 @@ body .img-photo {
   body .img-photo .link-ref-photo {
     text-decoration: none;
     color: black; }
+
+h1 {
+  font-size: x-large; }
 
 .conteiner {
   display: flex;
