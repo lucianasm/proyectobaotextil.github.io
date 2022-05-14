@@ -1,8 +1,8 @@
 header nav {
-  background-color: #a6d7d3; }
+  background-color: #217e9e; }
 
 header div {
-  background-color: #a6d7d3; }
+  background-color: #217e9e; }
   header div a img {
     width: 100px; }
 
@@ -25,6 +25,43 @@ body .img-photo {
 h1 {
   font-size: x-large; }
 
+.card-grid {
+  display: flex;
+  grid-gap: 80px; }
+
+.flip-card {
+  width: 320px;
+  height: 504px;
+  perspective: 2000px; }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px #0000;
+    border-radius: 20px;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+    transform-style: preserve-3d; }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    backface-visibility: hidden; }
+  .flip-card-front {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .flip-card-back {
+    font-size: 1.25rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    place-items: 32px;
+    background-color: aquamarine;
+    transform: rotateY(-180deg); }
+  .flip-card:hover, .flip-card flip-card-inner {
+    transform: rotateY(-180deg); }
+
 .conteiner {
   display: flex;
   align-content: center;
@@ -43,19 +80,19 @@ h1 {
   display: flex;
   align-content: center;
   justify-content: space-around;
-  background-color: #a6d7d3;
+  background-color: #217e9e;
   height: 30px; }
   .banner .text-banner {
     display: flex;
     text-align: center;
-    color: white; }
+    color: black; }
 
 footer {
-  background-color: #a6d7d3; }
+  background-color: #217e9e; }
   footer nav {
-    background-color: #a6d7d3; }
+    background-color: #217e9e; }
     footer nav div {
-      background-color: #a6d7d3; }
+      background-color: #217e9e; }
       footer nav div a img {
         display: flex;
         align-content: center;
