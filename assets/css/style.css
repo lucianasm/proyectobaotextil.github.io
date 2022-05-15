@@ -1,26 +1,39 @@
-header nav {
-  background-color: #217e9e; }
-
-header div {
-  background-color: #217e9e; }
-  header div a img {
-    width: 100px; }
-
-header .container-navbar {
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-direction: row; }
-
-body div {
-  padding-bottom: 10px; }
-
-body .img-photo {
-  display: flex;
-  justify-content: space-around; }
-  body .img-photo .link-ref-photo {
-    text-decoration: none;
-    color: black; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+  body .header {
+    display: flex;
+    overflow: hidden;
+    background-color: #217e9e;
+    padding: 20px 10px;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    body .header div {
+      display: flex;
+      justify-content: flex-end; }
+    body .header a {
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px; }
+      body .header a .logo {
+        font-size: 25px;
+        font-weight: bold; }
+        body .header a .logo:hover {
+          background-color: dodgerblue;
+          color: white; }
+      body .header a:active {
+        background-color: dodgerblue;
+        color: white; }
+  body .img-photo {
+    display: flex;
+    justify-content: space-around; }
+    body .img-photo .link-ref-photo {
+      text-decoration: none;
+      color: black; }
 
 h1 {
   font-size: x-large; }
@@ -59,7 +72,8 @@ h1 {
     place-items: 32px;
     background-color: aquamarine;
     transform: rotateY(-180deg); }
-  .flip-card:hover, .flip-card flip-card-inner {
+  .flip-card:hover,
+  .flip-card flip-card-inner {
     transform: rotateY(-180deg); }
 
 .conteiner {
@@ -72,6 +86,36 @@ h1 {
     margin: 10px; }
     .conteiner .image-inicio:hover {
       filter: opacity(60%); }
+
+.product-card {
+  display: flex;
+  justify-content: space-around; }
+  .product-card .new-card {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+    .product-card .new-card:hover {
+      transform: scale(1.1);
+      box-shadow: 15; }
+    .product-card .new-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .product-card .new-card p {
+      font-size: 3rem;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px black; }
 
 .product-card {
   margin: 10px; }
