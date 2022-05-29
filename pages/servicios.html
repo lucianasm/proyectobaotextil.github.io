@@ -1,100 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="TELA, TIZADO, ENVIOS, ENTREGAS, BORDADO, CORTE, CONFECCION">
-    <link rel="shortcut icon" href="../assets/img/letra-b.png" />
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <meta name="description" content="Agrega un servicio adicional a tu compra.">
-    <meta property="og:title" content="Compra telas" />
-    <meta property="og:url" content="https://baotextil.000webhostapp.com/" />
-    <meta property="og:image" content="https://baotextil.000webhostapp.com/" />
-  
-    <title>Servicios</title>  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid header">
-          <a href="../index.html" class="navbar logo">BAO TEXTIL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="TELA, TIZADO, ENVIOS, ENTREGAS, BORDADO, CORTE, CONFECCION">
+  <link rel="shortcut icon" href="../assets/img/letra-b.png" />
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <meta name="description" content="Agrega un servicio adicional a tu compra.">
+  <meta property="og:title" content="Compra telas" />
+  <meta property="og:url" content="https://baotextil.000webhostapp.com/" />
+  <meta property="og:image" content="https://baotextil.000webhostapp.com/" />
+
+  <title>Servicios</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="header__cont">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/img/baologo.png"
+            alt="logo bao textil marca"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-          <div class="collapse navbar-collapse header-right" id="navbarNavAltMarkup">
-            <div class=" container-navbar" id="header-options">
-            <a class="nav-link" href="../index.html">Inicio</a>
-            <a class="nav-link" href="../pages/empresa.html">Empresa</a>
-            <a class="nav-link" href="../pages/productos.html">Productos</a>
-            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
-            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-text container-navbar" id="header-options">
+            <a class="nav-link " aria-current="page" href="../index.html">INICIO</a>
+            <a class="nav-link " href="../pages/empresa.html">EMPRESA</a>
+            <a class="nav-link " href="../pages/productos.html">PRODUCTOS</a>
+            <a class="nav-link " href="../pages/servicios.html">SERVICIOS</a>
+            <a class="nav-link " href="../pages/contacto.html">CONTACTO</a>
           </div>
         </div>
-        </div>
-       </nav>
-    </header>
-<!--fin header-->
+      </div>
+    </nav>
+  </header>
+  <!--fin header-->
+  <div class="product-card row row-cols-md-2 row-cols-1 ">
+    <div class="col new-card">
+      <img src="../assets/img/Corte-y-Confeccion-2.jpg" alt="simulacion de confeccion de prendas">
+      <p>CORTE</p>
+    </div>
 
-<div class="row row-cols-1 row-cols-md-2 g-4 product-card">
-  <div class="col">
-    <div class="card">
-      <img src="../assets/img/bordado-de-máquina.jpg" class="card-img-top" alt="maquina de bordado siendo utilizada en prenda azul">
-      <div class="card-body">
-        <h5 class="card-title">Bordado</h5>
-        <p class="card-text"></p>
-      </div>
+    <div class="col new-card">
+      <img src="../assets/img/corte-confeccion-1.jpg" alt="maquina de confeccion de tela">
+      <p>CONFECCION</p>
     </div>
-  </div>
-    <div class="col">
-    <div class="card">
-      <img src="../assets/img/Corte-y-Confeccion-2.jpg" class="card-img-top" alt="simulacion de confeccion de prendas">
-      <div class="card-body">
-        <h5 class="card-title">Confección</h5>
-        <p class="card-text"></p>
-      </div>
+
+    <div class="col new-card">
+      <img src="../assets/img/bordado-de-máquina.jpg" alt="maquina de bordado siendo utilizada en prenda azul">
+      <p>BORADO</p>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="../assets/img/corte-confeccion-1.jpg" class="card-img-top" alt="maquina de confeccion de tela">
-      <div class="card-body">
-        <h5 class="card-title">Corte</h5>
-        <p class="card-text"></p>
-      </div>
+
+    <div class="col new-card">
+      <img src="../assets/img/AGU_1680.jpg" alt="rollos de tela en camioneta">
+      <p>ENVIOS</p>
     </div>
+
   </div>
 
-  <div class="col">
-    <div class="card">
-      <img src="../assets/img/AGU_1680.jpg" class="card-img-top" alt="rollos de tela en camioneta">
-      <div class="card-body">
-        <h5 class="card-title">Envíos</h5>
-        <p class="card-text"></p>
-      </div>
+  <!--inicio footer-->
+  <footer class="footer">
+    <div class="footer-test">
+      <a href="../index.html"><img src="../assets/img/home-alt-2-regular-24.png" alt="icono home"
+          class="image-footer"></a>
+      <a href="https://www.instagram.com/baotextil/"><img src="../assets/img/instagram-logo-24.png" alt="logo instagram"
+          class="image-footer"></a>
+      <a href="../pages/contacto.html"><img src="../assets/img/ubicacion.png" alt="logo ubicacion"
+          class="image-footer"></a>
     </div>
-  </div>
-</div>
+  </footer>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
 
-<div class="banner">
-  <p class="text-banner">- Envios a todo el país -   Envios a todo el país - Envios a todo el país -</p>
-</div>
-
-<!--inicio footer-->
-    <footer class="footer">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="../index.html"><img src="../assets/img/home-alt-2-regular-24.png" alt="icono inicio"></a>
-          <a class="nav-link active" aria-current="page" href="https://www.instagram.com/baotextil/" target="_blank"><img src="../assets/img/instagram-logo-24.png" alt="icono instagram"></a>
-          <a class="nav-link" href="https://goo.gl/maps/Jyfex2CnoDCB1VXH7" target="_blank"><img src="../assets/img/ubicacion.png" alt="icono ubicacion"></a>   
-        </div>
-       </div>
-      </nav>
-    </footer>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>

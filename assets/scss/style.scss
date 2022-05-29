@@ -3,64 +3,50 @@
 @import "../scss/_maps.scss";
 
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
 
-    .header{
-        display: flex;
-        overflow: hidden;
+header {
+    margin-top: $margin;
+
+    nav {
+        background-color: $color-principal
+    }
+
+    div {
         background-color: $color-principal;
-        padding: 20px 10px;
-        justify-content: space-between;
-        margin-bottom: 20px;
 
-        div{
-            display: flex;
-            justify-content: flex-end;
+
+        #header-options {
+            @include display;
+            flex-direction: row;
         }
 
-        a{
-            color: white;
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
-
-            .logo{
-                font-size: 25px;
-                font-weight: bold;
-
-                &:hover{
-                    background-color: dodgerblue;
-                    color: white;
-                }
+        a {
+            &:hover {
+                background-color: $letra-principal;
+                color: $letra-principal;
             }
 
-            &:active{
-                background-color: dodgerblue;
-                color: white;
+            &:active {
+                background-color: $color-principal;
+                color: $letra-principal;
+            }
+
+            img {
+                width: 100px;
             }
         }
     }
 
-    @media screen and (max-width: 500px) {
+    .container-navbar {
+        @include display;
+        flex-direction: row;
 
     }
+}
 
-    .img-photo {
-        display: flex;
-        justify-content: space-around;
-
-
-        .link-ref-photo {
-            text-decoration: none;
-            color: black;
-
-        }
-
+@media screen and (max-width: 991px) {
+    #header-options {
+        flex-direction: column !important;
     }
 }
 
@@ -68,54 +54,13 @@ h1 {
     font-size: x-large;
 }
 
-.card-grid {
+.image-empresa {
     display: flex;
-    grid-gap: 80px;
-}
+    justify-content: center;
 
-.flip-card {
-    width: 320px;
-    height: 504px;
-    perspective: 2000px;
-
-    &-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 4px 20px #0000;
-        border-radius: 20px;
-        transition: all 550ms $c-bezier;
-        transform-style: preserve-3d;
-    }
-
-    &-front,
-    &-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 28px;
-        backface-visibility: hidden;
-    }
-
-    &-front {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    &-back {
-        font-size: 1.25rem;
-        text-align: center;
-        display: grid;
-        place-items: center;
-        place-items: 32px;
-        background-color: aquamarine;
-        transform: rotateY(-180deg);
-    }
-
-    &:hover,
-    flip-card-inner {
-        transform: rotateY(-180deg)
+    .image-card-emp {
+        display: flex;
+        @include image;
     }
 }
 
@@ -134,16 +79,85 @@ h1 {
     }
 }
 
+//*new card index//
+.more {
+    margin: 6%;
+
+    .new-container {
+        padding: $margin;
+        text-align: justify;
+
+    }
+
+    .link-new {
+        text-decoration: none;
+        color: $letra-secundaria;
+
+        &:hover {
+            background-color: $color-principal;
+            color: $color-principal;
+        }
+
+        &:active {
+            background-color: $color-principal;
+            color: $color-principal;
+        }
+    }
+
+    .new-titule {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: $margin;
+        color: black;
+    }
+
+    .new-p {
+        text-align: justify;
+        padding: $margin;
+        padding-top: 20px;
+        line-height: 35px;
+    }
+}
+
+//** card pag product//
+
+.new-card-product {
+    height: 600px;
+    margin-right: 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+
+    .new-image-prod {
+        width: 100%;
+        height: 50%;
+        @include image;
+
+    }
+
+    .titule-b {
+        text-align: center;
+        font-size: 40px;
+        font-family: monospace;
+    }
+
+    .text-b {
+        text-align: justify;
+        line-height: 35px;
+    }
+}
+
+//*new card index//
+
 .product-card {
-    display: flex;
-    justify-content: space-around;
+    @include display;
+    margin: $margin;
+
     .new-card {
         display: flex;
+        @include image;
         width: 500px;
         height: 400px;
-        overflow: hidden;
-        position: relative;
-        margin: 40px;
+        margin-top: 10%;
         border-radius: 20px;
         box-shadow: 5px 8px 12px black;
         cursor: pointer;
@@ -154,60 +168,149 @@ h1 {
             box-shadow: 15;
         }
 
-
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            @include image;
         }
 
         p {
             font-size: 3rem;
-            color: white;
+            color: $letra-principal;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            text-shadow: 0 0 8px black;
+            text-shadow: 0 0 8px $letra-secundaria;
         }
     }
-}
-
-.product-card {
-    margin: $margin;
 }
 
 .banner {
     @include display;
     background-color: $color-principal;
     height: 30px;
+    margin: $margin;
 
 
 
     .text-banner {
         display: flex;
-        text-align: center;
+        text-align: $margin;
         color: $letra-principal;
 
     }
 }
 
+//*new page contact//
+.contact-titule {
+    font-size: 50px;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    border: 5px;
+    cursor: auto;
+    transition: all 0.3s;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-decoration-line: overline;
 
-footer {
-    background-color: $color-principal;
+    &:hover {
+        transform: rotate(-30deg);
 
-    nav {
-        background-color: $color-principal;
+    }
+}
 
-        div {
-            background-color: $color-principal;
+h2 {
+    text-align: center;
+    padding: $margin;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-            a {
-                img {
-                    @include display;
-                    width: 40px;
-                }
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 15;
+    }
+}
+
+.contact {
+    @include display;
+    padding-top: 50px;
+
+    .contact-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+
+        p {
+            text-align: center;
+            padding: 15px;
+            width: 500px;
+        }
+
+        .line {
+            background: black;
+            width: 80%;
+            height: 4px;
+            align-self: center;
+            margin: 10px;
+        }
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .iframe {
+            width: 400px;
+            height: 350px;
+            border-radius: 30px;
+            margin-left: 20px;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 15;
             }
         }
+    }
+}
+
+.footer-test {
+    @include display;
+    background-color: $color-principal;
+    margin-top: 10%;
+
+    a {
+        &:hover {
+            background-color: $letra-principal;
+            color: $letra-principal;
+        }
+
+        &:active {
+            background-color: $letra-principal;
+            color: $letra-principal;
+        }
+
+        .image-footer {
+            width: 50px;
+            margin: $margin;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .new-card-product {
+        margin: 20px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
     }
 }
